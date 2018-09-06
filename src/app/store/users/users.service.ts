@@ -7,7 +7,6 @@ import { UsersState } from './users.model';
 import { UsersActions } from './users.actions';
 import { Observable } from 'rxjs/Observable';
 
-
 @Injectable()
 export class UsersService {
 

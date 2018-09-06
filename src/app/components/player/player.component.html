@@ -1,0 +1,15 @@
+<div class="player">
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <iframe *ngIf="radioUrl" [src]="radioUrl" frameborder="0" allow="autoplay; encrypted-media" class="youtubePlayer" autoplay></iframe>
+        </div>
+        <div *ngIf="radio && radio.tags" class="col-lg-6 col-md-6 col-sm-6 playerFont">
+            Now Playing - {{user.Name}} [{{radio.tags.toString()}}]
+        </div>
+        <div *ngIf="!radio || !radio.tags" class="col-lg-6 col-md-6 col-sm-6 playerFont">
+            Chill your mind, play some music
+        </div>
+    </div>
+  </div>
+</div>

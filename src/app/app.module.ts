@@ -38,6 +38,18 @@ import { RadiosActions } from './store/radios/radios.actions';
 import { StoreModule } from '../../node_modules/@ngrx/store';
 import { reducerInitialState, reducers } from './store/reducers';
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+var config = {
+  apiKey: "AIzaSyCnJzAShtXMXgCpgX2i6cVN05Rulji2GpM",
+  authDomain: "onair-da0c1.firebaseapp.com",
+  databaseURL: "https://onair-da0c1.firebaseio.com",
+  projectId: "onair-da0c1",
+  storageBucket: "onair-da0c1.appspot.com",
+  messagingSenderId: "122222892431"
+};
 
 @NgModule({
   imports: [
@@ -53,6 +65,9 @@ import { HttpClientModule } from '../../node_modules/@angular/common/http';
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp(config),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
     }),

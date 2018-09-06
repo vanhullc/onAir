@@ -1,0 +1,16 @@
+.appPlayer {
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    top: calc(100vh - 100px);
+    left: 0;
+    z-index: 10;
+    box-shadow: 56px 28px 106px 0px rgba(0,0,0,0.75);
+}
+
+.main-panel {
+    height: calc(100vh - 100px) !important;
+}
+.sidebar {
+    height: calc(100vh - 100px) !important;
+}

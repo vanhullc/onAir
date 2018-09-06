@@ -1,0 +1,17 @@
+.profilePicture {
+    max-width: 80px;
+}
+
+.noRadiosFont {
+    height: 100%;
+    padding-top: 100px;
+    opacity: 0.8;
+    font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 1.75em;
+    letter-spacing: .2em;
+    line-height: 1.1em;
+    margin:0px;
+    text-align: center;
+    text-transform: uppercase;
+}
